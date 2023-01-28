@@ -1,0 +1,31 @@
+.sidebar {
+  background-color: white;
+  width: 300px;
+  height: 100vh;
+}
+
+.img_logo {
+  margin: 15px;
+}
+
+.sidebar_top {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar_contents {
+  margin-left: 20px;
+}
+.sidebar_contents h4 {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.setting {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+.setting h4 {
+  font-weight: 500;
+}

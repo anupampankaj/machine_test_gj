@@ -1,0 +1,126 @@
+.main {
+  display: flex;
+}
+.dashboard {
+  margin-left: 40px;
+  margin-top: -10px;
+}
+
+.dash_head h4 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.selection {
+  display: flex;
+  column-gap: 35px;
+}
+.selection_sub {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+.selection_sub p:active {
+  color: rgb(133, 28, 231);
+}
+.selection_sub h3 {
+  background-color: rgb(186, 159, 211);
+  color: rgb(133, 28, 231);
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.main_cat {
+  display: grid;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.main_cat label {
+  font-weight: 600;
+  font-size: small;
+  margin-bottom: 5px;
+}
+.category {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 100px;
+}
+.sub_category {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 100px;
+}
+
+.cat {
+  display: flex;
+  flex-direction: column;
+}
+
+.plus {
+  background-color: blue;
+  color: white;
+  width: 25px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+}
+
+.main_cat select {
+  width: 230px;
+  height: 30px;
+  border: 1px solid rgb(179, 176, 176);
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+}
+
+.button_d {
+  position: absolute;
+  bottom: 90px;
+  right: 90px;
+}
+
+.button_d button {
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  width: 80px;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .category {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 100px;
+  }
+  .sub_category {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 100px;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .sidebar {
+    display: none;
+  }
+}
